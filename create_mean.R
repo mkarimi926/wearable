@@ -90,7 +90,7 @@ create_mean <- function(wearable_data) {
                                 mean(`fBodyBodyGyroJerkMag-meanFreq()`)
                                 )
         # write the output file
-        write.table(wdata_mean, "wdata_mean.txt", row.names = FALSE)
+        write.table(wdata_mean, "wdata_mean.txt", sep = ",", row.names = FALSE)
         print("mean created")
         wdata_mean
 }
